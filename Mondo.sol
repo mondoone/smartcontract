@@ -163,6 +163,13 @@ contract Mondo is SafeMath, StandardToken {
         return true;
     }
 
+    function changeTokenPrice(uint tpico1, uint tpico2, uint tpico) external onlyOwner returns (bool){
+        oneTokenInWeiSale1 = tpico1;
+        oneTokenInWei1Sale2 = tpico2;
+        oneTokenInWei = tpico;
+        return true;
+    }
+
     function finalize() external onlyOwner returns (bool){
       owner.transfer(this.balance);
       return true;
