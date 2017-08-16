@@ -90,15 +90,15 @@ contract Mondo is SafeMath, StandardToken {
     uint256 public constant decimals = 18;
 
     uint256 private constant tokenCreationCapPreICO02 =  5000000*10**decimals;
-    uint256 private constant tokenCreationCapPreICO15 =  6000000*10**decimals;
-    uint256 public constant tokenCreationCap = 12500000*10**decimals;
+    uint256 private constant tokenCreationCapPreICO15 =  11000000*10**decimals;
+    uint256 public constant tokenCreationCap = 23500000*10**decimals;
 
     address public constant owner = 0x0077DA9DF6507655CDb3aB9277A347EDe759F93F;
 
-    // 1 ETH = 300 USD Date: 11.08.2017
-    uint private oneTokenInWeiSale1 = 66666666666666; // 0,02 $
-    uint private oneTokenInWei1Sale2 = 500000000000000; // 0,15 $
-    uint private oneTokenInWei = 5200000000000000; // 1,56 $
+    // 1 ETH = 280 USD Date: 11.08.2017
+    uint private oneTokenInWeiSale1 = 70175438596491; // 0,02 $
+    uint private oneTokenInWei1Sale2 = 526315789473684; // 0,15 $
+    uint private oneTokenInWei = 5473684210526320; // 1,56 $
 
     Phase public currentPhase = Phase.PreICO1;
 
